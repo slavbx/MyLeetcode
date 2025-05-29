@@ -37,7 +37,7 @@ class Task002 {
 
         String sum = String.valueOf(sumBig);
 
-        String[] strArrThree = sum.toString().split("");
+        String[] strArrThree = sum.split("");
 
         ListNode result = new ListNode(0);
         ListNode next = new ListNode(0);
