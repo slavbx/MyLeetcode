@@ -12,16 +12,8 @@ package org.leetcode;
  * }
  */
 
-class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) {
-          val = x;
-          next = null;
-      }
-}
 
-public class Solution {
+public class Task141 {
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;
         ListNode slow = head;
@@ -33,6 +25,15 @@ public class Solution {
             if (slow == fast) return true;
         }
         return false;
+    }
+
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
     }
 }
 
