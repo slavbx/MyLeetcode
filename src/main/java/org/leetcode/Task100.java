@@ -35,5 +35,4 @@ class Task100 {
             this.right = right;
         }
     }
-  }
 }
