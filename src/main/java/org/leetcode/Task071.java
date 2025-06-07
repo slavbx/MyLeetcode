@@ -14,7 +14,7 @@ class Task071 {
 
         while(matcher.find()) {
             String directory = matcher.group();
-            directory = directory.replaceAll("[/]+", "");
+            directory = directory.replaceAll("/", "");
             if (directory.equals(".")) continue;
             if (directory.equals("..")) {
                 if (!stack.isEmpty())stack.pop();
