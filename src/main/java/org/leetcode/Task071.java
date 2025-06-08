@@ -17,7 +17,7 @@ class Task071 {
             directory = directory.replaceAll("/", "");
             if (directory.equals(".")) continue;
             if (directory.equals("..")) {
-                if (!stack.isEmpty())stack.pop();
+                if (!stack.isEmpty()) stack.pop();
                 continue;
             }
             stack.push(directory);
