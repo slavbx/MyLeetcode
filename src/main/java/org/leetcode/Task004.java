@@ -30,7 +30,7 @@ class Task004 {
         int half = 0;
         if (merged.length % 2 == 1) {
             half = merged.length / 2 + 1;
-            result = (double) merged[half - 1];
+            result = merged[half - 1];
         }
         if (merged.length % 2 == 0) {
             half = merged.length / 2;
