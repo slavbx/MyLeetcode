@@ -21,7 +21,6 @@ class Task066 {
             if ((list.get(i) == 9)) {
                 if (i == 0) addDigit = true;
                 list.set(i, 0);
-                continue;
             }
         }
         if (addDigit) list.add(0, 1);
