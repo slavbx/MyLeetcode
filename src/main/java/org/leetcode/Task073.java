@@ -28,12 +28,12 @@ class Task073 {
             lists.add(map.get(digit));
         }
 
-        recursive(0, 0, "");
+        recursive(0, "");
 
         return combinations;
     }
 
-    private void recursive(int numList, int numSymbol, String combination) {
+    private void recursive(int numList, String combination) {
         if (lists.isEmpty()) return;
         if (numList == lists.size()) {
             combinations.add(combination);
@@ -42,7 +42,7 @@ class Task073 {
 
         List<String> list = lists.get(numList);
         for (String symbol : list) {
-            recursive(numList + 1, numSymbol, combination + symbol);
+            recursive(numList + 1, combination + symbol);
         }
     }
 }
