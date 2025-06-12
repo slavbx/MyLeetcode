@@ -1,11 +1,12 @@
 package org.leetcode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-//78. Subsets
-class Task078 {
-    public List<List<Integer>> subsets(int[] nums) {
+//90. Subsets II
+class Task090 {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         int max = (int)Math.pow(2, nums.length) - 1;
 
@@ -24,7 +25,8 @@ class Task078 {
                     list.add(nums[j]);
                 }
             }
-            result.add(list);
+            Collections.sort(list);
+            if (!result.contains(list)) result.add(list);
         }
         return result;
     }
